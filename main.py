@@ -4,7 +4,6 @@ from colorama import Fore, init
 init(autoreset=True)
 
 opcion = 0
-productos=[] #BORRARBLE
 
 con = base_de_datos.crear_conexion()
 base_de_datos.crear_tabla(con)
@@ -52,4 +51,5 @@ while opcion != 6:
         base_de_datos.buscar_productos(con)
     
     elif opcion == 5:
+
         base_de_datos.eliminar_productos(con)
